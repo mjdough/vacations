@@ -15,7 +15,7 @@ class StickyHeader {
     this.refreshWaypoints();
   }
 
-  refreshWayppoints() {
+  refreshWaypoints() {
     this.lazyImages.load(function() {
       Waypoint.refreshAll();
     });
@@ -54,6 +54,7 @@ class StickyHeader {
         },
         offset: "18%"
       });
+      
       new Waypoint({
         element: currentPageSection,
         handler: function(direction) {
